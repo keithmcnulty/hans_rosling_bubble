@@ -24,8 +24,7 @@ wbstats::wb(indicator = c("SP.DYN.LE00.IN", "NY.GDP.PCAP.CD", "SP.POP.TOTL"),
                 y = "Life expectancy at birth") +
   ggplot2::theme_classic() +
   ggplot2::geom_text(aes(x = 7.5, y = 60, label = date), size = 14, color = 'lightgrey', family = 'Oswald') +
-  gganimate::transition_states(date, 
-                    transition_length = 1, state_length = 1) +
+  gganimate::transition_states(date, transition_length = 1, state_length = 1) +
   gganimate::ease_aes('cubic-in-out')
   
 
