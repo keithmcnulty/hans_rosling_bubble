@@ -21,7 +21,7 @@ wbstats::wb(indicator = c("SP.DYN.LE00.IN", "NY.GDP.PCAP.CD", "SP.POP.TOTL"),
   ggplot2::scale_y_continuous(limits = c(30, 90)) +
   viridis::scale_color_viridis(discrete = TRUE, name = "Region", option = "viridis") +
   ggplot2::labs(x = "Log GDP per capita",
-       y = "Life expectancy at birth") +
+                y = "Life expectancy at birth") +
   ggplot2::theme_classic() +
   ggplot2::geom_text(aes(x = 7.5, y = 60, label = date), size = 14, color = 'lightgrey', family = 'Oswald') +
   gganimate::transition_states(date, 
